@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="JS/index.js" rel="stylesheet" defer></script>
+    <title>Simple-Dashboard-Project</title>
+</head>
+<body> 
+    <main>
+        
+    <div id="products-form">
+        <h2>Product Listing</h2>
+        <form action="">
+            <input type="text" placeholder=" Name" id="valueName">
+            <input type="text" placeholder=" Stock" id="valueStock">
+            <input type="text" placeholder=" Price" id="valuePrice">
+            <input type="text" placeholder=" Status" id="valueStatus">
+        </form>
+        <button id="addBtn">AGREGAR</button>
+    </div>
+
+    <div id="products-list">
+        <table>
+            <thead>
+                <tr>
+                    <th class="deleteBtn"></th>
+                    <th class="editBtn"></th>
+                    <th>Name</th>
+                    <th>Stock</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="deleteBtn"> <iconify-icon class="btns" icon="material-symbols:delete-outline-rounded"></iconify-icon></td>
+                    <td class="editBtn"><iconify-icon class="btns" icon="ep:edit-pen"></iconify-icon>
+                    </td>
+                    <td>Apple</td>
+                    <td>35</td>
+                    <td>$6</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="deleteBtn"><iconify-icon class="btns" icon="material-symbols:delete-outline-rounded"></iconify-icon></td>
+                    <td class="editBtn"><iconify-icon class="btns" icon="ep:edit-pen"></iconify-icon>
+                    </td>
+                    <td>Watermelon</td>
+                    <td>0</td>
+                    <td>$10</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td class="deleteBtn"><iconify-icon class="btns" icon="material-symbols:delete-outline-rounded"></iconify-icon></td>
+                    <td class="editBtn"><iconify-icon class="btns" icon="ep:edit-pen"></iconify-icon>
+                    </td>
+                    <td>Banana</td>
+                    <td>208</td>
+                    <td>$9</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="deleteBtn"><iconify-icon class="btns" icon="material-symbols:delete-outline-rounded"></iconify-icon></td>
+                    <td class="editBtn"><iconify-icon class="btns" icon="ep:edit-pen"></iconify-icon>
+                    </td>
+                    <td>Mango</td>
+                    <td>1.458</td>
+                    <td>$12</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="deleteBtn"><iconify-icon class="btns" icon="material-symbols:delete-outline-rounded"></iconify-icon></td>
+                    <td class="editBtn"><iconify-icon class="btns" icon="ep:edit-pen"></iconify-icon>
+                    </td>
+                    <td>Grapes</td>
+                    <td>465</td>
+                    <td>$15</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </main>
+
+
+    <h3>Created by Maximiliano Imanol aguer</h3>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+}
+h3 {
+    color:#00FF0099;
+    background: #CCC5;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+}
+main {
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    padding: 25px;
+}
+
+#products-form { 
+    max-width: 550px;
+    /* height:550px; */
+    padding: 25px;
+    margin: 25px;
+
+    display:flex;
+    flex-direction: column;
+    gap: 33px;
+
+    border:1px solid #CCC;
+    border-radius: 8px;
+}
+#products-form h2 {
+    text-align: center;
+    color: skyblue;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#products-form form {
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#products-form form input {
+    height: 33px;
+    border:1px solid #CCCB;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 5px;
+}
+#products-form form input:hover {
+    border: green 2px solid;
+}
+
+
+#products-form #addBtn {
+    border: none;
+    border-radius: 5px;
+    height: 33px;
+    color: #FFF;
+    background: #333C;
+}
+#products-form #addBtn:hover {
+    background: greenyellow;
+    color: black;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    transform: scale(1.025);
+}
+
+
+
+
+
+
+
+#products-list {
+    /* border:1px solid red; */
+    /* width: 95%; */
+    
+    margin: 25px;
+}
+
+#products-list table {
+    /* display: flex; */
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+    justify-content: center;
+    gap:15px;
+    border-collapse: collapse;
+}
+
+#products-list th {
+    height: 50px;
+    font-size: 20px;
+    border:1px #333 solid;
+
+    background: black;
+    color: white;
+}
+#products-list td {
+    /* width:150px; */
+    height: 33px;
+    font-size: 19px;
+    border:1px #CCC solid;
+    color: #FFF;
+    background: rgb(77, 121, 216);
+}
+.deleteBtn, .editBtn {
+    width:50px;
+}
+.deleteBtn > .btns:hover {
+    color: red;
+    cursor: pointer;
+}
+.editBtn > .btns:hover {
+    font-size:25px;
+    color: skyblue;
+    cursor: pointer;
+}
+.btns {
+    font-size:24px;
+}
+
+@media (max-width:1300px) {
+    main {
+        grid-template-columns:1fr 1fr;
+        transition: all 0.4s ease;
+    }
+    /* #products-list {
+        min-width: 400px;
+    } */
+}
+@media (max-width:950px) {
+    main {
+        grid-template-columns:1fr;
+        transition: all 0.4s ease;
+    }
+    #products-form {
+        min-width:95%;
+        padding:auto 80px;
+        transition: all 0.4s ease;
+    }
+    #products-list {
+        min-width: 95%;
+        transition: all 0.4s ease;
+    }
+    body {
+        animation: change 0.4s;
+        transition: animation 0.3s ease-in-out;
+    }
+    @keyframes change {
+        0% {background:#CCC;}
+        50% {background:black;}
+        75% {background: skyblue;}
+        100% {background: white;}
+    }
+}
