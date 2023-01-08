@@ -5,12 +5,13 @@
 }
 body {
     height: 100vh;
+    width: 100%;
 }
 h3 {
     color:#00FF0099;
     background: #CCC5;
     position: absolute;
-    bottom: 0;
+    top: 0;
     width:100%;
 }
 main {
@@ -46,13 +47,13 @@ main {
 
 #products-form form input {
     height: 33px;
-    border:1px solid #CCCB;
+    border:3px solid #CCCB;
     border-radius: 4px;
     outline: none;
     padding-left: 5px;
 }
 #products-form form input:hover {
-    border: green 2px solid;
+    border: skyblue 3px solid;
 }
 
 
@@ -110,21 +111,28 @@ main {
     color: #FFF;
     background: rgb(77, 121, 216);
 }
+
+
+
 .deleteBtn, .editBtn {
-    width:50px;
+    /* width:50px; */
+
+    font-size:20px;
+    margin:10px;
+    color: #333;
 }
-.deleteBtn > .btns:hover {
+.deleteBtn:hover {
+    transform: scale(1.15);
     color: red;
     cursor: pointer;
 }
-.editBtn > .btns:hover {
-    font-size:25px;
-    color: skyblue;
+.editBtn:hover {
+    transform: scale(1.15);
+    color: greenyellow;
     cursor: pointer;
 }
-.btns {
-    font-size:24px;
-}
+
+
 
 @media (max-width:1300px) {
     main {
